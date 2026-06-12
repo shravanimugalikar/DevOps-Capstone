@@ -4,7 +4,21 @@
 Simple Flask application with health endpoint.
 
 ## Architecture
-Developer -> GitHub -> GitHub Actions -> Docker Container
+Developer
+    |
+    v
+ GitHub Repository
+    |
+    v
+ GitHub Actions
+(Build + Test)
+    |
+    v
+ Docker Container
+    |
+    v
+ Flask App
+(/ and /health)
 
 ## Local Run
 python app.py
